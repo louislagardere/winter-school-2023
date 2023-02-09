@@ -1,0 +1,37 @@
+colvarsTrajFrequency    1000
+colvarsRestartFrequency 1000
+colvar {
+  name phi
+  width 5.0
+  lowerboundary  -180
+  upperboundary  180
+  dihedral {
+    oneSiteSystemForce
+    group1 {
+      atomnumbers 5}
+    group2 {
+        atomnumbers 7}
+    group3 {
+      atomnumbers 9}
+    group4 {
+      atomnumbers 15}}}
+colvar {
+  name psi
+  width 5.0
+  lowerboundary  -180
+  upperboundary   180
+  dihedral {
+    oneSiteSystemForce
+    group1 {
+      atomnumbers 7}
+    group2 {
+      atomnumbers 9}
+    group3 {
+      atomnumbers 15}
+    group4 {
+      atomnumbers 17}}}
+
+abf {
+  colvars       phi psi
+  fullSamples   200
+  }
