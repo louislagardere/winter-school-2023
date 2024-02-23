@@ -6,7 +6,7 @@ colvar {
   lowerboundary  -180
   upperboundary  180
   dihedral {
-    oneSiteSystemForce
+    oneSiteTotalForce
     group1 {
       atomnumbers 5}
     group2 {
@@ -21,7 +21,7 @@ colvar {
   lowerboundary  -180
   upperboundary   180
   dihedral {
-    oneSiteSystemForce
+    oneSiteTotalForce
     group1 {
       atomnumbers 7}
     group2 {
